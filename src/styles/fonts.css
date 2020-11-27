@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Samantha';
+    src: local('Samantha'), url(../fonts/samantha.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'BrandonText';
+    src: local('BrandonText'), url(../fonts/HVD-Fonts-BrandonText-Light.otf) format('opentype');
+}@font-face {
+    font-family: 'BrandonTextBold';
+    src: local('BrandonText-bold'), url(../fonts/HVD-Fonts-BrandonText-Bold.otf) format('opentype');
+}

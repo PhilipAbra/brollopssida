@@ -1,0 +1,48 @@
+{
+  "extends": ["prettier"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    // Disable until Flow supports let and const
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "trailingComma": "es5",
+      "semi": false
+    }],
+    "valid-jsdoc": 2,
+    // Disable until Flow supports let and const
+    "no-var": 0,
+    "no-class-assign": 0,
+    "react/jsx-uses-react": 1,
+    "react/jsx-filename-extension": ["error", { "extensions": ["js"] }],
+    "react/jsx-uses-vars": 2,
+    "react/jsx-no-undef": 2,
+    "react/jsx-wrap-multilines": 2,
+    "react/sort-comp": 2,
+    "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-trailing-spaces": 2,
+    // restore a11y later
+    "jsx-a11y/anchor-has-content": 0,
+    "jsx-a11y/alt-text": 0,
+    "arrow-parens": ["error", "as-needed"],
+    "no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 0}],
+    "max-depth": ["error", { "max": 4 }],
+    "max-nested-callbacks": [
+      "error", { "max": 4 }],
+    "max-params": ["error", { "max": 6 }]
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "parser": "babel-eslint"
+}
